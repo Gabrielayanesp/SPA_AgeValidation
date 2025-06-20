@@ -1,0 +1,217 @@
+:root { /* Paleta de colores */
+  --color-fondo: #fff0f5;
+  --color-primario: #cf1c58;
+  --color-secundario: #c2185b;
+  --color-texto: #880e4f;
+
+  --color-mensaje-menor: #f8bbd0;
+  --color-texto-menor: #ad1457;
+
+  --color-mensaje-mayor: #ffcdd2;
+  --color-texto-mayor: #b71c1c;
+
+  --color-error: #f44336;
+  --color-texto-error: #ffffff;
+
+  --color-boton: #d81b60;
+  --color-boton-hover: #c2185b;
+
+  --fuente-principal: 'Segoe UI', sans-serif;
+  --radio-bordes: 10px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  background: white;
+  border-radius: var(--radio-bordes);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 4em auto;
+
+}
+
+
+.panel.izquierdo {
+  flex: 2;
+  background-color: var(--color-primario);
+  color: white;
+  padding: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panel.izquierdo h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.panel.izquierdo p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+
+.panel.derecho {
+  flex: 1.5;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.mensaje {
+  padding: 1em;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 1em;
+  background-color: #eee;
+  color: var(--color-texto);
+  transition: all 0.3s ease;
+}
+
+.mensaje.menor {
+  background-color: var(--color-mensaje-menor);
+  color: var(--color-texto-menor);
+}
+
+.mensaje.mayor {
+  background-color: var(--color-mensaje-mayor);
+  color: var(--color-texto-mayor);
+}
+
+.mensaje.error {
+  background-color: var(--color-error);
+  color: var(--color-texto-error);
+}
+
+input {
+  padding: 0.8em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: var(--radio-bordes);
+  font-size: 1em;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-primario);
+}
+
+
+button {
+  padding: 0.8em;
+  background-color: var(--color-boton);
+  color: white;
+  border: none;
+  border-radius: var(--radio-bordes);
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--color-boton-hover);
+  transform: scale(1.05);
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1.5em;
+  background-color: var(--color-primario);
+  color: white;
+  font-size: 0.9em;
+  margin-top: auto;
+}
+
+.footer a {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: white;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--color-boton-hover);
+}
+
+@media (max-width: 1024px) {
+  .contenedor {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .panel.izquierdo,
+  .panel.derecho {
+    flex: 1 1 50%;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .panel.izquierdo {
+    padding: 2em;
+    text-align: left;
+  }
+
+  .panel.derecho {
+    padding: 2em;
+  }
+}
+
+
+@media (max-width: 390px) {
+  .contenedor {
+    flex-direction: column;
+    width: 100%;
+    max-width: 90%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .panel.izquierdo,
+  .panel.derecho {
+    width: 100%;
+    padding: 1.2rem;
+    text-align: center;
+  }
+
+  .panel.izquierdo h1 {
+    font-size: 1em;
+  }
+
+  .panel.izquierdo p {
+    font-size: 1em;
+  }
+
+  .container.btn{
+    display: flex;
+  }
+
+  input,
+  button {
+    width: 90%;
+    font-size: 1em;
+  
+  }
+
+  .mensaje {
+    font-size: 0.95em;
+  }
+}
