@@ -1,56 +1,53 @@
 # SPA_AgeValidation – Sistema Interactivo de Validación de Edad
 
-Bienvenid@ al **Sistema Interactivo de Validación de Edad**, un proyecto desarrollado con tecnologías web modernas (HTML, CSS y JavaScript) que permite validar la edad del usuario de forma amigable y visual dentro de una Single Page Application (SPA).
+**Programa:** Sistema interactivo y de validación de datos.
 
-## 💡 Descripción
+Este proyecto es una aplicación web desarrollada por **Maria Gabriela Yanes Pardo** que le permite al usuario ingresar su nombre y edad, para luego mostrarle un **mensaje personalizado** según su edad.
 
-Este sistema fue creado por **Maria Gabriela Yanes Pardo** como una herramienta práctica para verificar si un usuario es mayor o menor de edad dentro de un entorno digital.
+Es una práctica integradora de los conocimientos aprendidos en **HTML, CSS y JavaScript**, usando buenas prácticas de organización, estilo y lógica.
 
-Su propósito es educativo y motivacional, ofreciendo mensajes personalizados según los datos ingresados. Es ideal para reforzar conceptos de validación de formularios, estilos responsivos y uso de variables CSS modernas.
+---
 
-## 🛠️ Tecnologías utilizadas
+## ¿Qué hace esta aplicación?
 
-- **HTML5**
-- **CSS3** (con variables personalizadas en `:root`)
-- **JavaScript (ES6)**
+- Verifica si el usuario es mayor o menor de edad.
+- Valida los campos para que solo se acepten nombres válidos (sin números ni símbolos) y edades en números.
+- Muestra mensajes visuales diferentes si el usuario es **menor**, **mayor de edad** o hay un **error**.
+- Todo con una interfaz clara, colorida y adaptada a dispositivos móviles.
 
-## 🎨 Paleta de Colores
+---
 
-La estética del sistema está basada en tonos **rosados y rojos armónicos**, transmitiendo energía, calidez y un enfoque amigable. Los colores se encuentran centralizados en el `:root` del CSS, lo que facilita su mantenimiento.
+## Tecnologías utilizadas
 
-## 📱 Responsive Design
+- **HTML5:** Es la estructura de la página. Define todo lo visible en pantalla, como títulos, párrafos, cajas y botones. Utilicé etiquetas como `<div>`, `<input>`, `<button>` y `<p>`. El HTML también enlaza los archivos de CSS y JS.
+  
+  Se organizó todo dentro de un contenedor principal que divide la pantalla en dos:
+  - Panel izquierdo: contiene el título principal (`<h1>`) y una descripción (`<p>`).
+  - Panel derecho: incluye los campos para escribir nombre y edad, y un botón para obtener el resultado.
 
-Diseñado para funcionar perfectamente en:
+- **CSS3:** Le da color, forma y estilo a la página web. Definí una **paleta en `:root`** con tonos rojos y rosados, para usar los mismos colores de forma organizada. Usé **Flexbox** para ubicar los paneles correctamente y **media queries (`@media`)** para que el diseño se vea bien en celulares, tablets y PC.
 
-- **Computadoras (escritorio)**
-- **Tablets**
-- **Celulares (ancho ≤ 390px)**
+  También creé clases para mostrar mensajes con colores distintos:  
+   Error –  Menor de edad –  Mayor de edad.
 
-Adaptando los paneles, inputs y botones para mejorar la experiencia del usuario sin importar el dispositivo.
+- **JavaScript (ES6):** Captura lo que escribe el usuario y se ejecuta al hacer clic en el botón. JS valida que el nombre contenga solo letras y que la edad sea un número.  
+  Luego, muestra un mensaje personalizado según la edad. Si hay errores, muestra mensajes para corregir.
 
-## ✨ Funcionalidades
+---
 
-- Validación de **nombre** (solo letras, sin números ni símbolos).
-- Validación de **edad** (solo números).
-- Muestra mensajes visuales y adaptados:
-  - Si eres menor de edad: mensaje motivacional.
-  - Si eres mayor de edad: mensaje de bienvenida al mundo del desarrollo.
-- Indicadores de **error visual** si los datos no son válidos.
-- **Interfaz visual clara y motivacional.**
+##  Responsive Design
 
-## 🧪 ¿Cómo usarlo?
+Está adaptado para:
 
-1. Clona el repositorio o descarga los archivos.
-2. Abre el archivo `index.html` en tu navegador.
-3. Ingresa tu nombre y tu edad.
-4. Presiona el botón **"Mi resultado"**.
-5. Observa el mensaje personalizado.
+- Computadoras (pantalla grande)
+- Tablets
+- Celulares (hasta 390px de ancho)
 
-## 📌 Autor
+---
 
-**Maria Gabriela Yanes Pardo**  
-💻 Desarrolladora Frontend en formación  
-🌐 [GitHub](https://github.com/Gabrielayanesp)
+##  Estructura del Proyecto
+
+
 
 ---
 
